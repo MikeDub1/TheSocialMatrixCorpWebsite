@@ -2018,9 +2018,18 @@ figcaption {
     color: #fff;
   }
 
+  .div-block-2 {
+    grid-template-areas: "Area-7 Area-7 Area-7 Area-7 Area-7"
+      "Area-7 Area-7 Area-7 Area-7 Area-7"
+      "Area-2 Area-3 Area-4 Area-5 .";
+    -ms-grid-rows: 145px minmax(67px, 1fr) 96px;
+    grid-template-rows: 145px minmax(67px, 1fr) 96px;
+  }
+
   .heading2phone {
+    top: -16px;
     font-size: 500%;
-    line-height: 100px;
+    line-height: 100%;
   }
 
   .logo-link-2 {
@@ -2364,6 +2373,12 @@ figcaption {
     margin-top: 94px;
     margin-bottom: 0px;
   }
+
+  .div-block-4 {
+    overflow: visible;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2641,19 +2656,22 @@ figcaption {
 
   .div-block-2 {
     overflow: visible;
-    height: auto;
-    margin-top: 80px;
+    height: 100%;
+    margin-top: 0px;
   }
 
   .button-2 {
     margin-right: 39px;
     padding-right: 10px;
     padding-left: 10px;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
   }
 
   .heading2phone {
+    top: -155px;
     z-index: 1;
-    margin-top: 128px;
+    margin-top: 216px;
     margin-right: 0px;
     margin-left: 0px;
     padding-top: 0px;
@@ -2797,7 +2815,7 @@ figcaption {
   .image-5 {
     position: absolute;
     z-index: 0;
-    margin-top: 0px;
+    margin-top: 270px;
   }
 
   .div-block-4 {
@@ -2870,6 +2888,20 @@ figcaption {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
   grid-area: Area-4;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81ba-c48c1510 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81b1-c48c1510 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
 }
 
 #w-node-ca1212d8-4247-8b87-bc90-543393b118e6-ab8c1512 {
@@ -3146,6 +3178,13 @@ figcaption {
     grid-column-end: 2;
     -ms-grid-row-span: 1;
     grid-row-end: 2;
+  }
+
+  #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81ba-c48c1510 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   #w-node-ca1212d8-4247-8b87-bc90-543393b118f2-ab8c1512 {
