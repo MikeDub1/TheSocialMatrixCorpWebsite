@@ -2370,7 +2370,7 @@ figcaption {
   }
 
   .image-5 {
-    margin-top: 94px;
+    margin-top: 128px;
     margin-bottom: 0px;
   }
 
@@ -2656,12 +2656,18 @@ figcaption {
 
   .div-block-2 {
     overflow: visible;
-    height: 100%;
+    height: 65%;
     margin-top: 0px;
+    grid-template-areas: "Area-7 Area-7 Area-7 Area-7 Area-7"
+      "Area-7 Area-7 Area-7 Area-7 Area-7"
+      "Area-2 Area-3 Area-4 Area-5 .";
+    -ms-grid-rows: 145px 0.25fr 96px;
+    grid-template-rows: 145px 0.25fr 96px;
   }
 
   .button-2 {
-    margin-right: 39px;
+    height: 50px;
+    margin-right: 50px;
     padding-right: 10px;
     padding-left: 10px;
     -webkit-filter: blur(1px);
@@ -2815,7 +2821,7 @@ figcaption {
   .image-5 {
     position: absolute;
     z-index: 0;
-    margin-top: 270px;
+    margin-top: 0px;
   }
 
   .div-block-4 {
@@ -2891,6 +2897,20 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+  #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81ba-c48c1510 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81b1-c48c1510 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+}
+
+@media screen and (max-width: 479px) {
   #w-node-d0a978b6-ed58-bd51-40ec-f8c13ecd81ba-c48c1510 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
