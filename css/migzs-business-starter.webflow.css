@@ -2640,6 +2640,7 @@ figcaption {
   }
 
   .div-block-2 {
+    overflow: visible;
     height: auto;
     margin-top: 80px;
   }
@@ -2801,12 +2802,15 @@ figcaption {
 
   .div-block-4 {
     display: block;
-    height: 50%;
+    overflow: visible;
+    height: 100%;
     grid-auto-columns: 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 }
 
