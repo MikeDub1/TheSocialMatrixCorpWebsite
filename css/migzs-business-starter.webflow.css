@@ -1375,8 +1375,9 @@ figcaption {
 }
 
 .div-block-2 {
-  position: relative;
+  position: absolute;
   top: auto;
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   overflow: hidden;
@@ -1423,6 +1424,8 @@ figcaption {
   transition: opacity 1000ms ease, -webkit-transform 1000ms ease;
   transition: transform 1000ms ease, opacity 1000ms ease;
   transition: transform 1000ms ease, opacity 1000ms ease, -webkit-transform 1000ms ease;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .button-2 {
@@ -1533,6 +1536,8 @@ figcaption {
 }
 
 .body-2 {
+  overflow: hidden;
+  height: 100%;
   background-color: #000;
 }
 
@@ -1677,10 +1682,30 @@ figcaption {
 }
 
 .image-5 {
-  margin-top: 1116px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0px;
   padding-left: 0px;
   background-color: transparent;
   opacity: 0.72;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.div-block-4 {
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
@@ -1993,6 +2018,11 @@ figcaption {
     color: #fff;
   }
 
+  .heading2phone {
+    font-size: 500%;
+    line-height: 100px;
+  }
+
   .logo-link-2 {
     background-color: #440101;
   }
@@ -2282,6 +2312,20 @@ figcaption {
     margin-bottom: -32px;
   }
 
+  .heading2phone {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-size: 500%;
+    line-height: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .body-2 {
+    overflow: hidden;
+  }
+
   .logo-link-2 {
     padding-left: 0px;
   }
@@ -2314,6 +2358,11 @@ figcaption {
     padding-top: 0px;
     padding-bottom: 0px;
     line-height: 0px;
+  }
+
+  .image-5 {
+    margin-top: 94px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2590,9 +2639,15 @@ figcaption {
     margin-bottom: -32px;
   }
 
+  .div-block-2 {
+    height: auto;
+    margin-top: 80px;
+  }
+
   .button-2 {
     margin-right: 39px;
-    padding-right: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .heading2phone {
@@ -2739,9 +2794,19 @@ figcaption {
   }
 
   .image-5 {
-    position: relative;
+    position: absolute;
     z-index: 0;
     margin-top: 0px;
+  }
+
+  .div-block-4 {
+    display: block;
+    height: 50%;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -2801,16 +2866,6 @@ figcaption {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
   grid-area: Area-4;
-}
-
-#w-node-cb015988-459b-00fa-4b14-e6238c855b92-c48c1510 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
-  grid-area: Area-7;
-  -ms-grid-column-align: center;
-  justify-self: center;
 }
 
 #w-node-ca1212d8-4247-8b87-bc90-543393b118e6-ab8c1512 {
