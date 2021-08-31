@@ -2970,7 +2970,7 @@ figcaption {
     opacity: 1;
     -webkit-filter: blur(0px);
     filter: blur(0px);
-    font-size: 1.5vh;
+    font-size: 2vh;
     line-height: 30px;
     -o-object-fit: fill;
     object-fit: fill;
@@ -3227,7 +3227,7 @@ figcaption {
   }
 
   .div-block-8 {
-    margin-top: 75%;
+    margin-top: 55%;
   }
 
   .container-3 {
